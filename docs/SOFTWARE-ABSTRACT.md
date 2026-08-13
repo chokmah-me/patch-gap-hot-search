@@ -18,7 +18,7 @@ Paper concept DOI [10.5281/zenodo.21910874](https://doi.org/10.5281/zenodo.21910
 - `verify_patchgap_claims.py` — thin Monte Carlo gate for three toy claims
 - `claim-manifest.json` — `cd-claim-gate/v1`
 - `results/` — executed gate evidence from the recorded run
-- `figures/` — demo SVGs
+- `figures/` — five labeled SVGs (HOT vs null, \(G\) and \(S\), searcher rule, actors, limiters)
 
 No paper PDF. No real legal corpus.
 
@@ -52,7 +52,7 @@ Illustrates the paper’s §4.4 distinction that \(G\) can fall while \(S_\text{
 
 ## 7. This software version (scientific delta)
 
-First public companion (v0.1.0 intended). Spill ranking replaces an initial degree-heavy rank that recovered HOT *hubs* rather than planted bridges. No prior software version to supersede.
+**v0.1.1.** Five Tufte-leaning figures replace unlabeled snapshots: seed strips with axes; stacked \(G(t)\) and \(S(t)\) (no dual y-axis); spill vs degree-greedy; actor-class execution stocks; limiter 2×2. These can fail a paper sentence on this toy. Dynamics and gated claims are unchanged from v0.1.0.
 
 ## 8. Citation
 
