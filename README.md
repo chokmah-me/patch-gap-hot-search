@@ -6,7 +6,7 @@ Companion **software** for
 
 **Do not simulate \(G\).** This toy generates \(R_d\) from a budgeted interface searcher on a HOT-designed rule graph. \(G = R_d / R_p\) and the stocks \(S_\text{known}\), \(S_\text{active}\) are *outputs*.
 
-The paper repo (`patch-gap`) is paper-only. This tree is a separate software companion. No software DOI has been minted.
+The paper repo (`https://github.com/chokmah-me/patch-gap`) is paper-only. This tree is a separate software companion (`https://github.com/chokmah-me/patch-gap-hot-search`). No software DOI has been minted. Zenodo-ready body: [`docs/SOFTWARE-ABSTRACT.md`](docs/SOFTWARE-ABSTRACT.md).
 
 ## What is claimed / not claimed
 

@@ -11,5 +11,6 @@
 
 ## External links
 
+- **This software (GitHub):** https://github.com/chokmah-me/patch-gap-hot-search
 - Paper GitHub: https://github.com/chokmah-me/patch-gap
 - Paper record: https://zenodo.org/records/21910875

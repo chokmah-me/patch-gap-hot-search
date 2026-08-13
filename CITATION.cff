@@ -10,6 +10,7 @@ authors:
 date-released: "2026-08-12"
 version: "0.1.0-unreleased"
 license: MIT
+repository-code: "https://github.com/chokmah-me/patch-gap-hot-search"
 keywords:
   - governance patch-gap
   - highly optimized tolerance

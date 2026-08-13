@@ -1,5 +1,9 @@
 # Changelog
 
+## unreleased — 2026-08-13 — Public GitHub tree (no software DOI)
+
+Pushed as `chokmah-me/patch-gap-hot-search`. Added `docs/SOFTWARE-ABSTRACT.md` (Zenodo draft, 8-part scholarly body). Paper v1.0 unchanged. Software concept still not opened.
+
 ## unreleased — 2026-08-12 — First companion scaffold
 
 HOT vs uniform-null rule graphs, spill-ranked interface searcher, two-stock
