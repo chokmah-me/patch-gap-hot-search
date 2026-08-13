@@ -1,0 +1,14 @@
+computational-claim-gate verify  ok=True
+schema: cd-claim-gate/v1
+project: C:\Users\Elke Shayna\Documents\00Dev\patch-gap-hot-search
+manifest: C:\Users\Elke Shayna\Documents\00Dev\patch-gap-hot-search\claim-manifest.json
+timestamp: 2026-08-13T02:18:12.240256+00:00
+claims: 1
+
+## claim patchgap-hot-searcher  ok=True  exit=0  ms=309
+cmd: ['python', 'verify_patchgap_claims.py']
+--- log tail ---
+OK:   HOT concentration: mean share HOT=0.957 null=0.212 gap=0.745 (n=20, budget=20)
+OK:   stock identity: 350 Rd>Rp steps, S_known nondecreasing (10 runs)
+OK:   limiter qualitative: 10/10 runs show G drop + rising S_known (triggered=10)
+ALL CHECKS PASSED

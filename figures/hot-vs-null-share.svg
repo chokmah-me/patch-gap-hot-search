@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="48" y="24" font-family="system-ui,sans-serif" font-size="14">Claim 1 snapshot — HOT vs uniform-null (not a legal measurement)</text>
+<rect x="180" y="59.2" width="120" height="252.8" fill="#1d4ed8"/>
+<rect x="400" y="255.9" width="120" height="56.1" fill="#6b7280"/>
+<text x="180" y="344" font-family="system-ui,sans-serif" font-size="12">HOT mean 0.96</text>
+<text x="400" y="344" font-family="system-ui,sans-serif" font-size="12">null mean 0.21</text>
+<text x="48" y="352" font-family="system-ui,sans-serif" font-size="10" fill="#666">penumbra share of top-20 interface-ranked nodes, 20 seeds</text>
+</svg>

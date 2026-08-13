@@ -1,0 +1,158 @@
+{
+  "seed": 20260812,
+  "claims": {
+    "hot-concentration": {
+      "n_seeds": 20,
+      "budget": 20,
+      "hot_mean": 0.9574999999999999,
+      "null_mean": 0.2125,
+      "gap": 0.7449999999999999,
+      "hot_shares": [
+        1.0,
+        0.9,
+        1.0,
+        0.85,
+        0.95,
+        0.95,
+        0.95,
+        1.0,
+        1.0,
+        0.9,
+        0.95,
+        1.0,
+        1.0,
+        1.0,
+        0.9,
+        0.9,
+        0.95,
+        0.95,
+        1.0,
+        1.0
+      ],
+      "null_shares": [
+        0.25,
+        0.25,
+        0.05,
+        0.1,
+        0.05,
+        0.25,
+        0.2,
+        0.25,
+        0.2,
+        0.35,
+        0.1,
+        0.35,
+        0.4,
+        0.25,
+        0.2,
+        0.25,
+        0.25,
+        0.25,
+        0.05,
+        0.2
+      ]
+    },
+    "stock-identity": {
+      "runs": 10,
+      "rd_gt_rp_steps": 350,
+      "violations": 0
+    },
+    "limiter-qualitative": {
+      "runs": 10,
+      "triggered": 10,
+      "success": 10,
+      "details": [
+        {
+          "run": 0,
+          "triggered": true,
+          "ok": true,
+          "t_accel": 2,
+          "g_ref": 1.6666666666666667,
+          "t_drop": 3,
+          "t_rise": 3
+        },
+        {
+          "run": 1,
+          "triggered": true,
+          "ok": true,
+          "t_accel": 2,
+          "g_ref": 1.6666666666666667,
+          "t_drop": 3,
+          "t_rise": 3
+        },
+        {
+          "run": 2,
+          "triggered": true,
+          "ok": true,
+          "t_accel": 2,
+          "g_ref": 1.6666666666666667,
+          "t_drop": 3,
+          "t_rise": 3
+        },
+        {
+          "run": 3,
+          "triggered": true,
+          "ok": true,
+          "t_accel": 2,
+          "g_ref": 1.6666666666666667,
+          "t_drop": 3,
+          "t_rise": 3
+        },
+        {
+          "run": 4,
+          "triggered": true,
+          "ok": true,
+          "t_accel": 2,
+          "g_ref": 1.6666666666666667,
+          "t_drop": 3,
+          "t_rise": 3
+        },
+        {
+          "run": 5,
+          "triggered": true,
+          "ok": true,
+          "t_accel": 2,
+          "g_ref": 1.6666666666666667,
+          "t_drop": 3,
+          "t_rise": 3
+        },
+        {
+          "run": 6,
+          "triggered": true,
+          "ok": true,
+          "t_accel": 2,
+          "g_ref": 1.6666666666666667,
+          "t_drop": 3,
+          "t_rise": 3
+        },
+        {
+          "run": 7,
+          "triggered": true,
+          "ok": true,
+          "t_accel": 2,
+          "g_ref": 1.6666666666666667,
+          "t_drop": 3,
+          "t_rise": 3
+        },
+        {
+          "run": 8,
+          "triggered": true,
+          "ok": true,
+          "t_accel": 2,
+          "g_ref": 1.6666666666666667,
+          "t_drop": 3,
+          "t_rise": 3
+        },
+        {
+          "run": 9,
+          "triggered": true,
+          "ok": true,
+          "t_accel": 2,
+          "g_ref": 1.6666666666666667,
+          "t_drop": 3,
+          "t_rise": 3
+        }
+      ]
+    }
+  }
+}

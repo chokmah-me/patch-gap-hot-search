@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "Cite the paper. This companion has no software DOI yet."
+type: software
+title: "patch-gap-hot-search"
+authors:
+  - family-names: Bilar
+    given-names: Daniyel Yaacov
+    orcid: "https://orcid.org/0000-0002-9040-6914"
+    affiliation: "Chokmah LLC"
+date-released: "2026-08-12"
+version: "0.1.0-unreleased"
+license: MIT
+keywords:
+  - governance patch-gap
+  - highly optimized tolerance
+  - open texture
+  - computational claim gate
+preferred-citation:
+  type: article
+  title: "The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair"
+  authors:
+    - family-names: Bilar
+      given-names: Daniyel Yaacov
+      orcid: "https://orcid.org/0000-0002-9040-6914"
+      affiliation: "Chokmah LLC"
+  year: 2026
+  version: "1.0"
+  doi: "10.5281/zenodo.21910875"
+  url: "https://doi.org/10.5281/zenodo.21910875"
+  publisher:
+    name: Zenodo

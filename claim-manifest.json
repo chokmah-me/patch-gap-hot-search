@@ -1,0 +1,11 @@
+{
+  "schema": "cd-claim-gate/v1",
+  "claims": [
+    {
+      "id": "patchgap-hot-searcher",
+      "description": "Thin MC: HOT interface searcher concentrates finds in planted penumbra vs uniform-null; S_known nondecreasing while Rd>Rp; legislative acceleration can drop G while S_known still rises. Not a measurement of legal G.",
+      "command": ["python", "verify_patchgap_claims.py"],
+      "timeout_sec": 120
+    }
+  ]
+}

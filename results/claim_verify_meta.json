@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "schema": "cd-claim-gate/v1",
+  "project": "C:\\Users\\Elke Shayna\\Documents\\00Dev\\patch-gap-hot-search",
+  "manifest": "C:\\Users\\Elke Shayna\\Documents\\00Dev\\patch-gap-hot-search\\claim-manifest.json",
+  "claims": [
+    {
+      "id": "patchgap-hot-searcher",
+      "ok": true,
+      "command": [
+        "python",
+        "verify_patchgap_claims.py"
+      ],
+      "exit_code": 0,
+      "duration_ms": 309,
+      "log_tail": "OK:   HOT concentration: mean share HOT=0.957 null=0.212 gap=0.745 (n=20, budget=20)\nOK:   stock identity: 350 Rd>Rp steps, S_known nondecreasing (10 runs)\nOK:   limiter qualitative: 10/10 runs show G drop + rising S_known (triggered=10)\nALL CHECKS PASSED",
+      "errors": [],
+      "golden_ok": null,
+      "golden_details": []
+    }
+  ],
+  "errors": [],
+  "timestamp_utc": "2026-08-13T02:18:12.240256+00:00",
+  "policy": {
+    "default_timeout_sec": 600,
+    "self_certify_by_reading": false
+  }
+}
