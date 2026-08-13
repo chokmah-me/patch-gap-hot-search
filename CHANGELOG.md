@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.0 — 2026-08-13 — First software mint
+
+Zenodo software concept `10.5281/zenodo.21918091`, version `10.5281/zenodo.21918092`.
+GitHub Release `v0.1.0`. File: `patch-gap-hot-search-v0.1.0.zip`.
+Not the paper concept `10.5281/zenodo.21910874`.
+
 ## unreleased — 2026-08-13 — Public GitHub tree (no software DOI)
 
 Pushed as `chokmah-me/patch-gap-hot-search`. Added `docs/SOFTWARE-ABSTRACT.md` (Zenodo draft, 8-part scholarly body). Paper v1.0 unchanged. Software concept still not opened.

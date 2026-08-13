@@ -56,4 +56,4 @@ First public companion (v0.1.0 intended). Spill ranking replaces an initial degr
 
 ## 8. Citation
 
-Cite the paper concept DOI [10.5281/zenodo.21910874](https://doi.org/10.5281/zenodo.21910874) for the argument. Cite this software **concept** DOI once minted for the runnable artifact. Until then: this GitHub tree, commit on `main`.
+Cite the paper concept DOI [10.5281/zenodo.21910874](https://doi.org/10.5281/zenodo.21910874) for the argument. Cite this software **concept** DOI [10.5281/zenodo.21918091](https://doi.org/10.5281/zenodo.21918091) for the runnable artifact (this zip: [10.5281/zenodo.21918092](https://doi.org/10.5281/zenodo.21918092)).

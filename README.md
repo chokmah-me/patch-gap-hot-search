@@ -1,12 +1,19 @@
 # patch-gap-hot-search
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21918091.svg)](https://doi.org/10.5281/zenodo.21918091)
+
 Companion **software** for
 
 > Daniyel Yaacov Bilar. *The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair* (v1.0). Zenodo. [10.5281/zenodo.21910874](https://doi.org/10.5281/zenodo.21910874) (concept); [10.5281/zenodo.21910875](https://doi.org/10.5281/zenodo.21910875) (PDF).
 
 **Do not simulate \(G\).** This toy generates \(R_d\) from a budgeted interface searcher on a HOT-designed rule graph. \(G = R_d / R_p\) and the stocks \(S_\text{known}\), \(S_\text{active}\) are *outputs*.
 
-The paper repo (`https://github.com/chokmah-me/patch-gap`) is paper-only. This tree is a separate software companion (`https://github.com/chokmah-me/patch-gap-hot-search`). No software DOI has been minted. Zenodo-ready body: [`docs/SOFTWARE-ABSTRACT.md`](docs/SOFTWARE-ABSTRACT.md).
+The paper repo (`https://github.com/chokmah-me/patch-gap`) is paper-only. This tree is a separate software companion (`https://github.com/chokmah-me/patch-gap-hot-search`).
+
+- Software **concept** DOI (always latest zip): [10.5281/zenodo.21918091](https://doi.org/10.5281/zenodo.21918091)
+- Software **version** DOI (v0.1.0): [10.5281/zenodo.21918092](https://doi.org/10.5281/zenodo.21918092)
+
+Zenodo body: [`docs/SOFTWARE-ABSTRACT.md`](docs/SOFTWARE-ABSTRACT.md).
 
 ## What is claimed / not claimed
 
@@ -64,8 +71,10 @@ Actor classes only change execution latency and the fraction of known finds that
 
 ## Citation
 
-Cite the paper. This software has no version DOI yet.
+Cite the paper for the argument. Cite this software concept for the runnable toy.
 
 Bilar, D. Y. (2026). *The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair* (v1.0). Zenodo. https://doi.org/10.5281/zenodo.21910874
+
+Bilar, D. Y. (2026). *patch-gap-hot-search: a synthetic HOT-searcher toy for the governance patch-gap* (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.21918091 (concept); https://doi.org/10.5281/zenodo.21918092 (this zip)
 
 License: MIT (this code). The paper is CC BY 4.0.
