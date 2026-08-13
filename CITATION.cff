@@ -8,10 +8,10 @@ authors:
     orcid: "https://orcid.org/0000-0002-9040-6914"
     affiliation: "Chokmah LLC"
 date-released: "2026-08-13"
-version: "0.1.0"
+version: "0.1.1"
 license: MIT
-doi: "10.5281/zenodo.21918092"
-url: "https://doi.org/10.5281/zenodo.21918092"
+doi: "10.5281/zenodo.21918637"
+url: "https://doi.org/10.5281/zenodo.21918637"
 repository-code: "https://github.com/chokmah-me/patch-gap-hot-search"
 keywords:
   - governance patch-gap
@@ -27,9 +27,9 @@ preferred-citation:
       orcid: "https://orcid.org/0000-0002-9040-6914"
       affiliation: "Chokmah LLC"
   year: 2026
-  version: "0.1.0"
+  version: "0.1.1"
   doi: "10.5281/zenodo.21918091"
   url: "https://doi.org/10.5281/zenodo.21918091"
   publisher:
     name: Zenodo
-  notes: "Concept DOI (always latest). This zip: 10.5281/zenodo.21918092."
+  notes: "Concept DOI (always latest). This zip: 10.5281/zenodo.21918637."

@@ -11,7 +11,7 @@ Companion **software** for
 The paper repo (`https://github.com/chokmah-me/patch-gap`) is paper-only. This tree is a separate software companion (`https://github.com/chokmah-me/patch-gap-hot-search`).
 
 - Software **concept** DOI (always latest zip): [10.5281/zenodo.21918091](https://doi.org/10.5281/zenodo.21918091)
-- Software **version** DOI (v0.1.0): [10.5281/zenodo.21918092](https://doi.org/10.5281/zenodo.21918092)
+- Software **version** DOI (v0.1.1): [10.5281/zenodo.21918637](https://doi.org/10.5281/zenodo.21918637)
 
 Zenodo body: [`docs/SOFTWARE-ABSTRACT.md`](docs/SOFTWARE-ABSTRACT.md).
 
@@ -75,6 +75,6 @@ Cite the paper for the argument. Cite this software concept for the runnable toy
 
 Bilar, D. Y. (2026). *The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair* (v1.0). Zenodo. https://doi.org/10.5281/zenodo.21910874
 
-Bilar, D. Y. (2026). *patch-gap-hot-search: a synthetic HOT-searcher toy for the governance patch-gap* (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.21918091 (concept); https://doi.org/10.5281/zenodo.21918092 (this zip)
+Bilar, D. Y. (2026). *patch-gap-hot-search: a synthetic HOT-searcher toy for the governance patch-gap* (v0.1.1). Zenodo. https://doi.org/10.5281/zenodo.21918091 (concept); https://doi.org/10.5281/zenodo.21918637 (this zip)
 
 License: MIT (this code). The paper is CC BY 4.0.

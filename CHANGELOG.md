@@ -5,7 +5,7 @@
 Replaced unlabeled snapshots with five Tufte-leaning SVGs (axes, ticks, base-rate
 and \(G=1\) hairlines, seed strips, no dual y-axis). Added searcher-rule,
 actor-class, and limiter small multiples that can fail a paper sentence on this
-toy. Gate unchanged. Same software concept as v0.1.0.
+toy. Gate unchanged. Zenodo version `10.5281/zenodo.21918637` (concept still `10.5281/zenodo.21918091`).
 
 ## v0.1.0 — 2026-08-13 — First software mint
 

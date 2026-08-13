@@ -56,4 +56,4 @@ Illustrates the paper’s §4.4 distinction that \(G\) can fall while \(S_\text{
 
 ## 8. Citation
 
-Cite the paper concept DOI [10.5281/zenodo.21910874](https://doi.org/10.5281/zenodo.21910874) for the argument. Cite this software **concept** DOI [10.5281/zenodo.21918091](https://doi.org/10.5281/zenodo.21918091) for the runnable artifact (this zip: [10.5281/zenodo.21918092](https://doi.org/10.5281/zenodo.21918092)).
+Cite the paper concept DOI [10.5281/zenodo.21910874](https://doi.org/10.5281/zenodo.21910874) for the argument. Cite this software **concept** DOI [10.5281/zenodo.21918091](https://doi.org/10.5281/zenodo.21918091) for the runnable artifact (this zip: [10.5281/zenodo.21918637](https://doi.org/10.5281/zenodo.21918637)).
