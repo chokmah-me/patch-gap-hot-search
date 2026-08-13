@@ -1,5 +1,12 @@
 # Changelog
 
+## unreleased — 2026-08-13 — Labeled figures
+
+Replaced unlabeled snapshots with five Tufte-leaning SVGs (axes, ticks, base-rate
+and \(G=1\) hairlines, seed strips, no dual y-axis). Added searcher-rule,
+actor-class, and limiter small multiples that can fail a paper sentence on this
+toy. Gate unchanged.
+
 ## v0.1.0 — 2026-08-13 — First software mint
 
 Zenodo software concept `10.5281/zenodo.21918091`, version `10.5281/zenodo.21918092`.

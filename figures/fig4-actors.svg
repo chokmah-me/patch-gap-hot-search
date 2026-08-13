@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="28" y="26" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#222222">Same discoveries; execution stock depends on who acts</text>
+<text x="157.5" y="46.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#222222">corporate (slow, filtered)</text>
+<line x1="70.0" y1="296.0" x2="245.0" y2="296.0" stroke="#222222" stroke-width="0.8"/>
+<line x1="70.0" y1="296.0" x2="70.0" y2="56.0" stroke="#222222" stroke-width="0.8"/>
+<line x1="70.0" y1="296.0" x2="70.0" y2="300.0" stroke="#222222" stroke-width="0.7"/>
+<text x="70.0" y="311.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">0</text>
+<line x1="159.7" y1="296.0" x2="159.7" y2="300.0" stroke="#222222" stroke-width="0.7"/>
+<text x="159.7" y="311.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">20</text>
+<line x1="245.0" y1="296.0" x2="245.0" y2="300.0" stroke="#222222" stroke-width="0.7"/>
+<text x="245.0" y="311.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">39</text>
+<line x1="70.0" y1="296.0" x2="66.0" y2="296.0" stroke="#222222" stroke-width="0.7"/>
+<text x="63.0" y="299.5" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">0</text>
+<line x1="70.0" y1="213.7" x2="66.0" y2="213.7" stroke="#222222" stroke-width="0.7"/>
+<text x="63.0" y="217.2" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">10</text>
+<line x1="70.0" y1="131.4" x2="66.0" y2="131.4" stroke="#222222" stroke-width="0.7"/>
+<text x="63.0" y="134.9" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">20</text>
+<line x1="70.0" y1="73.8" x2="66.0" y2="73.8" stroke="#222222" stroke-width="0.7"/>
+<text x="63.0" y="77.3" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">27</text>
+<text x="157.5" y="326.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#222222">time step</text>
+<text x="28.0" y="176.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#222222" transform="rotate(-90 28.0 176.0)">stock (count)</text>
+<polyline fill="none" stroke="#222222" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" points="70.0,246.6 74.5,213.7 79.0,180.8 83.5,156.1 87.9,131.4 92.4,106.7 96.9,90.2 101.4,73.8 105.9,73.8 110.4,73.8 114.9,73.8 119.4,73.8 123.8,82.0 128.3,90.2 132.8,98.5 137.3,106.7 141.8,114.9 146.3,123.2 150.8,131.4 155.3,139.6 159.7,147.9 164.2,156.1 168.7,164.3 173.2,172.5 177.7,180.8 182.2,189.0 186.7,197.2 191.2,205.5 195.6,213.7 200.1,221.9 204.6,230.2 209.1,238.4 213.6,246.6 218.1,254.8 222.6,263.1 227.1,279.5 231.5,296.0 236.0,296.0 240.5,296.0 245.0,296.0"/>
+<polyline fill="none" stroke="#a34a12" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" points="70.0,296.0 74.5,296.0 79.0,296.0 83.5,296.0 87.9,296.0 92.4,296.0 96.9,287.8 101.4,271.3 105.9,271.3 110.4,271.3 114.9,271.3 119.4,271.3 123.8,271.3 128.3,271.3 132.8,271.3 137.3,271.3 141.8,271.3 146.3,271.3 150.8,279.5 155.3,287.8 159.7,296.0 164.2,296.0 168.7,296.0 173.2,296.0 177.7,296.0 182.2,296.0 186.7,296.0 191.2,296.0 195.6,296.0 200.1,296.0 204.6,296.0 209.1,296.0 213.6,296.0 218.1,296.0 222.6,296.0 227.1,296.0 231.5,296.0 236.0,296.0 240.5,296.0 245.0,296.0"/>
+<text x="78.0" y="68.0" font-family="Georgia, 'Times New Roman', serif" font-size="9" fill="#222222">known</text>
+<text x="78.0" y="80.0" font-family="Georgia, 'Times New Roman', serif" font-size="9" fill="#a34a12">active</text>
+<text x="367.5" y="46.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#222222">state (medium)</text>
+<line x1="280.0" y1="296.0" x2="455.0" y2="296.0" stroke="#222222" stroke-width="0.8"/>
+<line x1="280.0" y1="296.0" x2="280.0" y2="56.0" stroke="#222222" stroke-width="0.8"/>
+<line x1="280.0" y1="296.0" x2="280.0" y2="300.0" stroke="#222222" stroke-width="0.7"/>
+<text x="280.0" y="311.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">0</text>
+<line x1="369.7" y1="296.0" x2="369.7" y2="300.0" stroke="#222222" stroke-width="0.7"/>
+<text x="369.7" y="311.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">20</text>
+<line x1="455.0" y1="296.0" x2="455.0" y2="300.0" stroke="#222222" stroke-width="0.7"/>
+<text x="455.0" y="311.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">39</text>
+<line x1="280.0" y1="296.0" x2="276.0" y2="296.0" stroke="#222222" stroke-width="0.7"/>
+<text x="273.0" y="299.5" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">0</text>
+<line x1="280.0" y1="213.7" x2="276.0" y2="213.7" stroke="#222222" stroke-width="0.7"/>
+<text x="273.0" y="217.2" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">10</text>
+<line x1="280.0" y1="131.4" x2="276.0" y2="131.4" stroke="#222222" stroke-width="0.7"/>
+<text x="273.0" y="134.9" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">20</text>
+<line x1="280.0" y1="73.8" x2="276.0" y2="73.8" stroke="#222222" stroke-width="0.7"/>
+<text x="273.0" y="77.3" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">27</text>
+<text x="367.5" y="326.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#222222">time step</text>
+<text x="238.0" y="176.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#222222" transform="rotate(-90 238.0 176.0)"></text>
+<polyline fill="none" stroke="#222222" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" points="280.0,246.6 284.5,213.7 289.0,180.8 293.5,156.1 297.9,131.4 302.4,106.7 306.9,106.7 311.4,106.7 315.9,106.7 320.4,106.7 324.9,106.7 329.4,106.7 333.8,114.9 338.3,123.2 342.8,131.4 347.3,139.6 351.8,147.9 356.3,156.1 360.8,164.3 365.3,172.5 369.7,180.8 374.2,189.0 378.7,197.2 383.2,205.5 387.7,213.7 392.2,221.9 396.7,230.2 401.2,238.4 405.6,246.6 410.1,254.8 414.6,263.1 419.1,271.3 423.6,279.5 428.1,287.8 432.6,296.0 437.1,296.0 441.5,296.0 446.0,296.0 450.5,296.0 455.0,296.0"/>
+<polyline fill="none" stroke="#a34a12" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" points="280.0,296.0 284.5,296.0 289.0,296.0 293.5,296.0 297.9,287.8 302.4,271.3 306.9,263.1 311.4,254.8 315.9,246.6 320.4,246.6 324.9,246.6 329.4,246.6 333.8,246.6 338.3,246.6 342.8,246.6 347.3,246.6 351.8,246.6 356.3,254.8 360.8,263.1 365.3,271.3 369.7,279.5 374.2,287.8 378.7,296.0 383.2,296.0 387.7,296.0 392.2,296.0 396.7,296.0 401.2,296.0 405.6,296.0 410.1,296.0 414.6,296.0 419.1,296.0 423.6,296.0 428.1,296.0 432.6,296.0 437.1,296.0 441.5,296.0 446.0,296.0 450.5,296.0 455.0,296.0"/>
+
+<text x="577.5" y="46.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#222222">unsupervised agent</text>
+<line x1="490.0" y1="296.0" x2="665.0" y2="296.0" stroke="#222222" stroke-width="0.8"/>
+<line x1="490.0" y1="296.0" x2="490.0" y2="56.0" stroke="#222222" stroke-width="0.8"/>
+<line x1="490.0" y1="296.0" x2="490.0" y2="300.0" stroke="#222222" stroke-width="0.7"/>
+<text x="490.0" y="311.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">0</text>
+<line x1="579.7" y1="296.0" x2="579.7" y2="300.0" stroke="#222222" stroke-width="0.7"/>
+<text x="579.7" y="311.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">20</text>
+<line x1="665.0" y1="296.0" x2="665.0" y2="300.0" stroke="#222222" stroke-width="0.7"/>
+<text x="665.0" y="311.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">39</text>
+<line x1="490.0" y1="296.0" x2="486.0" y2="296.0" stroke="#222222" stroke-width="0.7"/>
+<text x="483.0" y="299.5" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">0</text>
+<line x1="490.0" y1="213.7" x2="486.0" y2="213.7" stroke="#222222" stroke-width="0.7"/>
+<text x="483.0" y="217.2" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">10</text>
+<line x1="490.0" y1="131.4" x2="486.0" y2="131.4" stroke="#222222" stroke-width="0.7"/>
+<text x="483.0" y="134.9" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">20</text>
+<line x1="490.0" y1="73.8" x2="486.0" y2="73.8" stroke="#222222" stroke-width="0.7"/>
+<text x="483.0" y="77.3" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="10" fill="#222222">27</text>
+<text x="577.5" y="326.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#222222">time step</text>
+<text x="448.0" y="176.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#222222" transform="rotate(-90 448.0 176.0)"></text>
+<polyline fill="none" stroke="#222222" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" points="490.0,246.6 494.5,213.7 499.0,197.2 503.5,189.0 507.9,180.8 512.4,172.5 516.9,172.5 521.4,172.5 525.9,172.5 530.4,172.5 534.9,172.5 539.4,172.5 543.8,180.8 548.3,189.0 552.8,197.2 557.3,205.5 561.8,213.7 566.3,221.9 570.8,230.2 575.3,238.4 579.7,246.6 584.2,254.8 588.7,263.1 593.2,271.3 597.7,279.5 602.2,287.8 606.7,296.0 611.2,296.0 615.6,296.0 620.1,296.0 624.6,296.0 629.1,296.0 633.6,296.0 638.1,296.0 642.6,296.0 647.1,296.0 651.5,296.0 656.0,296.0 660.5,296.0 665.0,296.0"/>
+<polyline fill="none" stroke="#a34a12" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" points="490.0,296.0 494.5,271.3 499.0,254.8 503.5,238.4 507.9,230.2 512.4,221.9 516.9,213.7 521.4,213.7 525.9,213.7 530.4,213.7 534.9,213.7 539.4,213.7 543.8,213.7 548.3,213.7 552.8,221.9 557.3,230.2 561.8,238.4 566.3,246.6 570.8,254.8 575.3,263.1 579.7,271.3 584.2,279.5 588.7,287.8 593.2,296.0 597.7,296.0 602.2,296.0 606.7,296.0 611.2,296.0 615.6,296.0 620.1,296.0 624.6,296.0 629.1,296.0 633.6,296.0 638.1,296.0 642.6,296.0 647.1,296.0 651.5,296.0 656.0,296.0 660.5,296.0 665.0,296.0"/>
+
+<text x="28" y="350.0" font-family="Georgia, 'Times New Roman', serif" font-size="9" fill="#777777">Toy. Scenario knobs. Not a measurement of any legal system.  One HOT graph, three actor filters.  Discovery ranking is identical.  Shared y scale.</text>
+</svg>

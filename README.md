@@ -42,7 +42,7 @@ python verify_patchgap_claims.py
 # exit 0 iff the three claims hold
 
 python -m simulation.figures
-# optional SVG snapshots under figures/ — not load-bearing
+# labeled SVGs under figures/ — not load-bearing
 ```
 
 Outer gate (same command via manifest):
@@ -57,11 +57,11 @@ python path\to\computational-claim-gate\scripts\verify_claim_project.py --projec
 |------|------|
 | `simulation/graph.py` | HOT vs uniform-null generators; interface ranking |
 | `simulation/dynamics.py` | Counted \(R_d\), patcher, actor execution, two stocks |
-| `simulation/figures.py` | Optional SVG snapshots |
+| `simulation/figures.py` | Tufte-leaning SVG grammar (stdlib) |
 | `verify_patchgap_claims.py` | Thin MC claim gate |
 | `claim-manifest.json` | `cd-claim-gate/v1` |
 | `results/` | Gate evidence |
-| `figures/` | Demo SVGs (not the gate) |
+| `figures/` | Five labeled charts — see [`figures/README.md`](figures/README.md) |
 
 ## Parameters
 
