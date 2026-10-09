@@ -66,6 +66,8 @@ python run_all_gates.py --paper paper/PAPER_PATCHGAP_DRAFT_v6.md --lean \
 | `gates/check_searcher_sweep.py` | frozen 162-cell sweep; spill yes, degree no, random no | pass (v1 spec kept with its FAIL) |
 | `gates/check_regime_arithmetic.py` | Section 4.4 numbers recompute | pass (fails on v4-PRE) |
 | `gates/check_sources.py` | 14 figures, 4 retired phrasings, 3 predictions | pass |
+
+P1–P3 scoring rules: OSF registration https://osf.io/ag8zh/ (submitted 2026-10-09). Ledger: [`gates/predictions.json`](gates/predictions.json).
 | `lean/` | Section 4.3 stock algebra, kernel-checked | VERIFIED |
 
 The Lean gate needs elan with toolchain `leanprover/lean4:v4.15.0`. No Mathlib.

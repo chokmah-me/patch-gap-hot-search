@@ -1,6 +1,15 @@
 {
   "schema": "patchgap-predictions/v1",
   "as_of": "2026-10-09",
+  "osf_registration": {
+    "url": "https://osf.io/ag8zh/",
+    "guid": "ag8zh",
+    "template": "Theory-Based Predictions",
+    "submitted": "2026-10-09",
+    "pending_approval": true,
+    "expected_doi": "10.17605/OSF.IO/AG8ZH",
+    "note": "Predictions were already in paper v1.2; this freezes scoring rules before the deadlines."
+  },
   "statuses": [
     "open",
     "resolved-true",
