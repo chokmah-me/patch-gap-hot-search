@@ -1,10 +1,10 @@
 {
-  "record_id": 21918637,
-  "doi": "10.5281/zenodo.21918637",
+  "id": 23262639,
+  "doi": "10.5281/zenodo.23262639",
   "conceptdoi": "10.5281/zenodo.21918091",
   "conceptrecid": "21918091",
-  "state": "done",
-  "html": "https://zenodo.org/records/21918637",
-  "github_release": "https://github.com/chokmah-me/patch-gap-hot-search/releases/tag/v0.1.1",
-  "supersedes": "10.5281/zenodo.21918092"
+  "version": "0.2.0",
+  "zip_bytes": 89747,
+  "url": "https://zenodo.org/records/23262639",
+  "state": "done"
 }
