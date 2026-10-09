@@ -133,7 +133,7 @@
     },
     {
       "id": "bcbsa-942m",
-      "phrase": "more than 55,000 additional cases in which secondary diagnoses moved the claim into a higher-paying group, for an estimated $942 million over two years",
+      "phrase": "BCBSA estimates $942 million in added plan costs over two years",
       "source": "Fierce Healthcare 2026-09-24 reporting BCBSA",
       "source_version": "2026-09-24",
       "retrieved": "2026-10-09",
@@ -141,11 +141,11 @@
     },
     {
       "id": "bcbsa-anemia",
-      "phrase": "rising from about 4% to over 12% between mid-2022 and early 2025, against 7.9% to 8.2% elsewhere",
-      "source": "Becker's 2026-03-13 reporting BHI/BCBSA",
-      "source_version": "2026-03-13",
+      "phrase": "coded it in 13.7% of cases against 9.9% elsewhere, yet transfused fewer of the patients they coded (16.9% against 19.3%)",
+      "source": "https://fiercehealthcare.com/finance/hospitals-use-ai-coding-tools-cost-bcbsa-plans-942m-more-similar-care-analysis",
+      "source_version": "2026-09-24",
       "retrieved": "2026-10-09",
-      "ref": 58
+      "ref": 57
     },
     {
       "id": "estonia-effective",
@@ -154,6 +154,14 @@
       "source_version": "2026-02-10",
       "retrieved": "2026-10-09",
       "ref": 54
+    },
+    {
+      "id": "bcbsa-653m",
+      "phrase": "$653 million of that cost, came from more than 55,000 additional cases",
+      "source": "Fierce Healthcare 2026-09-24 reporting BCBSA",
+      "source_version": "2026-09-24",
+      "retrieved": "2026-10-09",
+      "ref": 57
     }
   ],
   "retired": [
@@ -188,6 +196,14 @@
     {
       "phrase": "pending mint",
       "why": "DOI now reserved: 10.5281/zenodo.23262565"
+    },
+    {
+      "phrase": "for an estimated $942 million over two years, while",
+      "why": "attributed the $942M total to secondary-diagnosis cases; those account for $653M (Kimi K3, round 2)"
+    },
+    {
+      "phrase": "rising from about 4% to over 12% between mid-2022",
+      "why": "March 2026 maternity analysis dropped; different population from the September analysis"
     }
   ]
 }
