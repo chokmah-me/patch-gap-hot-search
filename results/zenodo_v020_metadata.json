@@ -1,0 +1,75 @@
+{
+  "title": "patch-gap-hot-search: a synthetic HOT-searcher toy for the governance patch-gap",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "mit-license",
+  "publication_date": "2026-10-09",
+  "version": "0.2.0",
+  "language": "eng",
+  "imprint_publisher": "Zenodo",
+  "creators": [
+    {
+      "name": "Bilar, Daniyel Yaacov",
+      "affiliation": "Chokmah LLC",
+      "orcid": "0000-0002-9040-6914"
+    }
+  ],
+  "keywords": [
+    "AI governance",
+    "open texture",
+    "reward hacking",
+    "regulatory arbitrage",
+    "highly optimized tolerance",
+    "governance patch-gap",
+    "legal exploit discovery",
+    "computational claim gate",
+    "synthetic rule graph"
+  ],
+  "dates": [
+    {
+      "type": "updated",
+      "start": "2026-10-09",
+      "description": "v0.2.0: Lean 4 stock algebra, regime-arithmetic gate, 162-cell frozen sweep, source/prediction ledger."
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.21910874",
+      "relation": "isSupplementTo",
+      "scheme": "doi",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "10.5281/zenodo.23262565",
+      "relation": "isSupplementTo",
+      "scheme": "doi",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "10.5281/zenodo.21918637",
+      "relation": "isNewVersionOf",
+      "scheme": "doi",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://github.com/chokmah-me/patch-gap-hot-search",
+      "relation": "isIdenticalTo",
+      "scheme": "url",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://github.com/chokmah-me/patch-gap-hot-search/releases/tag/v0.2.0",
+      "relation": "isSupplementTo",
+      "scheme": "url",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://chokmah.me/research/patch-gap-hot-search-a-synthetic-hot-searcher-toy-for-the-go-23262639/",
+      "relation": "isDocumentedBy",
+      "scheme": "url",
+      "resource_type": "publication-other"
+    }
+  ],
+  "notes": "Software only. Do not merge with paper concept 10.5281/zenodo.21910874. Prefer software concept DOI 10.5281/zenodo.21918091 for always-latest zip. This record pins v0.2.0. Prior version 10.5281/zenodo.21918637 (v0.1.1) is superseded. License MIT. GitHub: github.com/chokmah-me/patch-gap-hot-search.",
+  "description": "<p><strong>1. Artifact claim.</strong> This deposit is a Python, stdlib-only toy that <em>generates</em> a discovery rate <em>R</em><sub>d</sub> from a label-blind interface searcher on a Highly Optimized Tolerance (HOT) rule graph; the patch-gap <em>G</em> = <em>R</em><sub>d</sub>/<em>R</em><sub>p</sub> and the stocks <em>S</em><sub>known</sub>, <em>S</em><sub>active</sub> are outputs, not fitted legal measurements.</p><p><strong>2. Problem / scientific context.</strong> Paper concept DOI <a href=\"https://doi.org/10.5281/zenodo.21910874\">10.5281/zenodo.21910874</a> (this PDF <a href=\"https://doi.org/10.5281/zenodo.23262565\">10.5281/zenodo.23262565</a>, v1.2) defines the governance patch-gap as a rate ratio and a stock, and maps legal open texture onto HOT / robust-yet-fragile design. <em>G</em> in that PDF is a definition, not a dynamical model; the §4.4 powers of ten are heuristics. This software exists so those qualitative distinctions can be run.</p><p><strong>3. Contents.</strong> HOT vs uniform-null generators (<code>simulation/graph.py</code>); counted <em>R</em><sub>d</sub>, patcher, actor filters, two-stock dynamics (<code>simulation/dynamics.py</code>); thin Monte Carlo gate (<code>verify_patchgap_claims.py</code>); Lean 4 stock-algebra proofs (<code>lean/</code>, no Mathlib); regime-arithmetic, frozen 162-cell searcher sweep, source/prediction ledger (<code>gates/</code>, <code>run_all_gates.py</code>); five labeled SVGs; executed gate evidence under <code>results/</code>. No paper PDF. No real legal corpus.</p><p><strong>4. How to reproduce.</strong> Python 3.10+ (3.8 likely fine). No third-party packages. <code>python verify_patchgap_claims.py</code> — exit 0 iff three toy claims hold. <code>python run_all_gates.py</code> runs Lean (toolchain v4.15.0), regime arithmetic, searcher sweep, and source/prediction checks. Optional: <code>python -m simulation.figures</code>.</p><p><strong>5. Relation to paper.</strong> Illustrates the paper’s §4.3 stock algebra and §4.4 distinction that <em>G</em> can fall while <em>S</em><sub>known</sub> still rises, and that a searcher aimed at interfaces is not the same as a degree-greedy crawl of a robust core. Load-bearing legal argument, predictions, and named weaknesses stay in the PDF. Paper and software are <strong>separate Zenodo concepts</strong>; do not merge this zip with the paper record 21910874 / 23262565.</p><p><strong>6. Limitations / non-claims.</strong> Not a measurement of legal <em>G</em>, <em>R</em><sub>d</sub>, or <em>R</em><sub>p</sub>. Not support for the paper’s heuristic exponents. Not a test that any statute is HOT (the generator <em>assumes</em> HOT structure). Not SocioHack, A1/VERITE, Rice/FLP, or an evaluation of any live bill. Claim 2 is the stock identity made executable. Claim 3 is an existence path under scenario knobs, not a legislature model.</p><p><strong>7. This version (v0.2.0, 2026-10-09).</strong> Adds four gates without changing the toy dynamics: Lean 4 proofs of the paper's §4.3 stock algebra (no sorry, standard axioms only; toolchain v4.15.0); a recomputation of the §4.4 regime arithmetic against the paper text; a 162-cell searcher sweep frozen before its first run (failed v1 spec kept); and a figure/prediction ledger that fails on drift or retired phrasing. Supersedes v0.1.1 <a href=\"https://doi.org/10.5281/zenodo.21918637\">10.5281/zenodo.21918637</a>.</p><p><strong>8. Citation.</strong> Cite the paper concept DOI 10.5281/zenodo.21910874 for the argument. Cite this software <em>concept</em> DOI 10.5281/zenodo.21918091 for the runnable artifact (this zip: 10.5281/zenodo.23262639).</p>"
+}

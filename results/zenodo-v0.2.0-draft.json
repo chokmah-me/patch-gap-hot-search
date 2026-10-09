@@ -1,0 +1,15 @@
+{
+  "kind": "software-v0.2.0-reserved",
+  "conceptrecid": "21918091",
+  "conceptdoi": "10.5281/zenodo.21918091",
+  "superseded_version": "10.5281/zenodo.21918637",
+  "draft_id": 23262639,
+  "reserved_version_doi": "10.5281/zenodo.23262639",
+  "reserved_recid": 23262639,
+  "published": false,
+  "version": "0.2.0",
+  "zip": "patch-gap-hot-search-v0.2.0.zip",
+  "cites_paper": "10.5281/zenodo.23262565",
+  "draft_html": "https://zenodo.org/deposit/23262639",
+  "note": "Record URL 404 until published. Reserved 2026-10-09. Separate concept from the paper."
+}
