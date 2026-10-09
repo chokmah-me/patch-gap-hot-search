@@ -1,6 +1,8 @@
 # Changelog
 
-## v0.2.0 — 2026-10-09 — Gates (unminted)
+## v0.2.0 — 2026-10-09 — Gates
+
+Zenodo version `10.5281/zenodo.23262639` (concept still `10.5281/zenodo.21918091`). Paper copy under `paper/` is the v1.2 source (`PAPER_PATCHGAP_DRAFT_v6.md`, paper version `10.5281/zenodo.23262565`).
 
 Added (gates; v0.1 claims unchanged):
 

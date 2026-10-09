@@ -39,7 +39,7 @@ python -m simulation.figures
 
 ## 5. Relation to paper
 
-Illustrates the paper’s §4.4 distinction that \(G\) can fall while \(S_\text{known}\) still rises, and that a searcher aimed at interfaces is not the same as a degree-greedy crawl of a robust core. Load-bearing legal argument, predictions, and named weaknesses stay in the PDF. Paper and software are **separate Zenodo concepts**; do not merge this zip with the paper record `21910874` / `21910875`.
+Illustrates the paper’s §4.4 distinction that \(G\) can fall while \(S_\text{known}\) still rises, and that a searcher aimed at interfaces is not the same as a degree-greedy crawl of a robust core. Load-bearing legal argument, predictions, and named weaknesses stay in the PDF. Paper and software are **separate Zenodo concepts**; do not merge this zip with the paper record `21910874` / `23262565`.
 
 ## 6. Limitations / non-claims
 
@@ -54,6 +54,8 @@ Illustrates the paper’s §4.4 distinction that \(G\) can fall while \(S_\text{
 
 **v0.1.1.** Five Tufte-leaning figures replace unlabeled snapshots: seed strips with axes; stacked \(G(t)\) and \(S(t)\) (no dual y-axis); spill vs degree-greedy; actor-class execution stocks; limiter 2×2. These can fail a paper sentence on this toy. Dynamics and gated claims are unchanged from v0.1.0.
 
+**v0.2.0.** Adds four gates without changing the toy: Lean 4 proofs of the paper's Section 4.3 stock algebra (no sorry, standard axioms only); a recomputation of the Section 4.4 regime arithmetic against the paper text; a 162-cell searcher sweep frozen before its first run (the failed first spec is kept with its result); and a figure and prediction ledger that fails on drift or retired phrasing.
+
 ## 8. Citation
 
-Cite the paper concept DOI [10.5281/zenodo.21910874](https://doi.org/10.5281/zenodo.21910874) for the argument. Cite this software **concept** DOI [10.5281/zenodo.21918091](https://doi.org/10.5281/zenodo.21918091) for the runnable artifact (this zip: [10.5281/zenodo.21918637](https://doi.org/10.5281/zenodo.21918637)).
+Cite the paper concept DOI [10.5281/zenodo.21910874](https://doi.org/10.5281/zenodo.21910874) for the argument. Cite this software **concept** DOI [10.5281/zenodo.21918091](https://doi.org/10.5281/zenodo.21918091) for the runnable artifact (this zip: [10.5281/zenodo.23262639](https://doi.org/10.5281/zenodo.23262639)).

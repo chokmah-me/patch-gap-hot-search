@@ -7,11 +7,11 @@ authors:
     given-names: Daniyel Yaacov
     orcid: "https://orcid.org/0000-0002-9040-6914"
     affiliation: "Chokmah LLC"
-date-released: "2026-08-13"
-version: "0.1.1"
+date-released: "2026-10-09"
+version: "0.2.0"
 license: MIT
-doi: "10.5281/zenodo.21918637"
-url: "https://doi.org/10.5281/zenodo.21918637"
+doi: "10.5281/zenodo.23262639"
+url: "https://doi.org/10.5281/zenodo.23262639"
 repository-code: "https://github.com/chokmah-me/patch-gap-hot-search"
 keywords:
   - governance patch-gap
@@ -27,9 +27,9 @@ preferred-citation:
       orcid: "https://orcid.org/0000-0002-9040-6914"
       affiliation: "Chokmah LLC"
   year: 2026
-  version: "0.1.1"
+  version: "0.2.0"
   doi: "10.5281/zenodo.21918091"
   url: "https://doi.org/10.5281/zenodo.21918091"
   publisher:
     name: Zenodo
-  notes: "Concept DOI (always latest). This zip: 10.5281/zenodo.21918637."
+  notes: "Concept DOI (always latest). This zip: 10.5281/zenodo.23262639."

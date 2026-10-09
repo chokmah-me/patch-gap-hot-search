@@ -4,14 +4,14 @@
 
 Companion **software** for
 
-> Daniyel Yaacov Bilar. *The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair* (v1.0). Zenodo. [10.5281/zenodo.21910874](https://doi.org/10.5281/zenodo.21910874) (concept); [10.5281/zenodo.21910875](https://doi.org/10.5281/zenodo.21910875) (PDF).
+> Daniyel Yaacov Bilar. *The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair* (v1.2). Zenodo. [10.5281/zenodo.21910874](https://doi.org/10.5281/zenodo.21910874) (concept); [10.5281/zenodo.23262565](https://doi.org/10.5281/zenodo.23262565) (v1.2 PDF).
 
 **Do not simulate \(G\).** This toy generates \(R_d\) from a budgeted interface searcher on a HOT-designed rule graph. \(G = R_d / R_p\) and the stocks \(S_\text{known}\), \(S_\text{active}\) are *outputs*.
 
 The paper repo (`https://github.com/chokmah-me/patch-gap`) is paper-only. This tree is a separate software companion (`https://github.com/chokmah-me/patch-gap-hot-search`).
 
 - Software **concept** DOI (always latest zip): [10.5281/zenodo.21918091](https://doi.org/10.5281/zenodo.21918091)
-- Software **version** DOI (v0.1.1): [10.5281/zenodo.21918637](https://doi.org/10.5281/zenodo.21918637)
+- Software **version** DOI (v0.2.0): [10.5281/zenodo.23262639](https://doi.org/10.5281/zenodo.23262639)
 
 Zenodo body: [`docs/SOFTWARE-ABSTRACT.md`](docs/SOFTWARE-ABSTRACT.md).
 
@@ -55,12 +55,12 @@ python path\to\computational-claim-gate\scripts\verify_claim_project.py --projec
 ## v0.2 gates
 
 ```text
-python run_all_gates.py --paper paper/PAPER_PATCHGAP_DRAFT_v5-PRE.md
-python run_all_gates.py --paper paper/PAPER_PATCHGAP_DRAFT_v5-PRE.md --lean \
+python run_all_gates.py --paper paper/PAPER_PATCHGAP_DRAFT_v6.md
+python run_all_gates.py --paper paper/PAPER_PATCHGAP_DRAFT_v6.md --lean \
     --lean-verifier path/to/lean-proof-forge/scripts/verify_lean_project.py
 ```
 
-| Gate | What it pins | Status on v5-PRE |
+| Gate | What it pins | Status on v6 |
 |------|--------------|------------------|
 | toy claims (v0.1) | HOT concentration, stock identity, limiter | pass |
 | `gates/check_searcher_sweep.py` | frozen 162-cell sweep; spill yes, degree no, random no | pass (v1 spec kept with its FAIL) |
@@ -94,6 +94,6 @@ Cite the paper for the argument. Cite this software concept for the runnable toy
 
 Bilar, D. Y. (2026). *The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair* (v1.0). Zenodo. https://doi.org/10.5281/zenodo.21910874
 
-Bilar, D. Y. (2026). *patch-gap-hot-search: a synthetic HOT-searcher toy for the governance patch-gap* (v0.1.1). Zenodo. https://doi.org/10.5281/zenodo.21918091 (concept); https://doi.org/10.5281/zenodo.21918637 (this zip)
+Bilar, D. Y. (2026). *patch-gap-hot-search: a synthetic HOT-searcher toy for the governance patch-gap* (v0.2.0). Zenodo. https://doi.org/10.5281/zenodo.21918091 (concept); https://doi.org/10.5281/zenodo.23262639 (this zip)
 
 License: MIT (this code). The paper is CC BY 4.0.

@@ -45,8 +45,8 @@ No mint, push, or announce from this gate.
 |------|--------|----------|
 | searcher sweep v1 | FAIL 48/54 spill cells (ceiling artifact) | `results/searcher_sweep_v1_FAILED.json` |
 | searcher sweep v2 | pass: spill 54/54, degree 49/54, random 54/54 | `results/searcher_sweep_v2.json` |
-| regime arithmetic | pass on v5-PRE; fails on v4-PRE | stdout |
-| sources/predictions | pass on v5-PRE | stdout |
+| regime arithmetic | pass on v6; fails on v4-PRE | stdout |
+| sources/predictions | pass on v6 | stdout |
 | Lean stock algebra | VERIFIED, 5 declarations | `lean/results/lean_verify_meta.json` |
 
 Lean was run against a locally linked toolchain (`lean-4.15.0`, same release as

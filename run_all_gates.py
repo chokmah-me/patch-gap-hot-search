@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Run every gate for patch-gap-hot-search v0.2.
 
-  python run_all_gates.py --paper path/to/PAPER_PATCHGAP_DRAFT_v5-PRE.md [--lean]
+  python run_all_gates.py --paper path/to/PAPER_PATCHGAP_DRAFT_v6.md [--lean]
 
 Gates:
   1. verify_patchgap_claims.py        toy MC claims (v0.1, unchanged)

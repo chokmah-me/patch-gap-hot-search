@@ -26,7 +26,7 @@
         "python",
         "gates/check_regime_arithmetic.py",
         "--paper",
-        "paper/PAPER_PATCHGAP_DRAFT_v5-PRE.md"
+        "paper/PAPER_PATCHGAP_DRAFT_v6.md"
       ],
       "timeout_sec": 30
     },
@@ -37,7 +37,7 @@
         "python",
         "gates/check_sources.py",
         "--paper",
-        "paper/PAPER_PATCHGAP_DRAFT_v5-PRE.md"
+        "paper/PAPER_PATCHGAP_DRAFT_v6.md"
       ],
       "timeout_sec": 30
     },
