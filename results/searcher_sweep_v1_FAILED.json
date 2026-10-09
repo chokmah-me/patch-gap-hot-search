@@ -1,0 +1,1785 @@
+{
+  "spec": {
+    "schema": "patchgap-searcher-sweep/v1",
+    "frozen_at": "2026-10-09T07:40:00Z",
+    "frozen_note": "Surface and pass criteria written before any sweep result was observed. Anything added after the first run goes in post_freeze, labeled.",
+    "master_seed": 20261009,
+    "n_seeds_per_cell": 12,
+    "axes": {
+      "searcher": [
+        "spill",
+        "degree",
+        "random"
+      ],
+      "n_penumbra": [
+        10,
+        20,
+        30
+      ],
+      "bridges_per_penumbra": [
+        2,
+        3
+      ],
+      "p_intra": [
+        0.3,
+        0.45,
+        0.6
+      ],
+      "budget": [
+        10,
+        20,
+        40
+      ]
+    },
+    "gap_definition": "mean(HOT penumbra share at budget) - mean(null penumbra share at budget), same size and edge count",
+    "criteria": {
+      "spill_positive": {
+        "searcher": "spill",
+        "test": "gap >= 0.20",
+        "min_cell_fraction": 0.9
+      },
+      "degree_negative_control": {
+        "searcher": "degree",
+        "test": "gap < 0.20",
+        "min_cell_fraction": 0.9
+      },
+      "random_null_control": {
+        "searcher": "random",
+        "test": "abs(gap) < 0.15",
+        "min_cell_fraction": 0.9
+      }
+    },
+    "estimand": "Does a label-blind searcher concentrate finds in planted interface penumbra more on HOT graphs than on null graphs? The paper's claim is searcher-dependent; this sweep checks that the dependence is the one the paper states (spill yes, degree no, random no) across generator knobs, and that it is not an artifact of the single default cell.",
+    "post_freeze": []
+  },
+  "summary": {
+    "spill_positive": {
+      "cells": 54,
+      "passed": 48,
+      "fraction": 0.8888888888888888,
+      "required": 0.9,
+      "ok": false,
+      "failing_cells": [
+        {
+          "searcher": "spill",
+          "n_penumbra": 10,
+          "bridges": 2,
+          "p_intra": 0.3,
+          "budget": 40,
+          "hot": 0.25,
+          "null": 0.12083333333333333,
+          "gap": 0.12916666666666665
+        },
+        {
+          "searcher": "spill",
+          "n_penumbra": 10,
+          "bridges": 2,
+          "p_intra": 0.45,
+          "budget": 40,
+          "hot": 0.25,
+          "null": 0.1125,
+          "gap": 0.1375
+        },
+        {
+          "searcher": "spill",
+          "n_penumbra": 10,
+          "bridges": 2,
+          "p_intra": 0.6,
+          "budget": 40,
+          "hot": 0.25,
+          "null": 0.10833333333333334,
+          "gap": 0.14166666666666666
+        },
+        {
+          "searcher": "spill",
+          "n_penumbra": 10,
+          "bridges": 3,
+          "p_intra": 0.3,
+          "budget": 40,
+          "hot": 0.25,
+          "null": 0.09166666666666667,
+          "gap": 0.15833333333333333
+        },
+        {
+          "searcher": "spill",
+          "n_penumbra": 10,
+          "bridges": 3,
+          "p_intra": 0.45,
+          "budget": 40,
+          "hot": 0.25,
+          "null": 0.12083333333333333,
+          "gap": 0.12916666666666665
+        },
+        {
+          "searcher": "spill",
+          "n_penumbra": 10,
+          "bridges": 3,
+          "p_intra": 0.6,
+          "budget": 40,
+          "hot": 0.25,
+          "null": 0.11875000000000001,
+          "gap": 0.13124999999999998
+        }
+      ]
+    },
+    "degree_negative_control": {
+      "cells": 54,
+      "passed": 52,
+      "fraction": 0.9629629629629629,
+      "required": 0.9,
+      "ok": true,
+      "failing_cells": [
+        {
+          "searcher": "degree",
+          "n_penumbra": 10,
+          "bridges": 3,
+          "p_intra": 0.3,
+          "budget": 20,
+          "hot": 0.4791666666666667,
+          "null": 0.10833333333333334,
+          "gap": 0.37083333333333335
+        },
+        {
+          "searcher": "degree",
+          "n_penumbra": 20,
+          "bridges": 3,
+          "p_intra": 0.3,
+          "budget": 40,
+          "hot": 0.49374999999999997,
+          "null": 0.22916666666666666,
+          "gap": 0.2645833333333333
+        }
+      ]
+    },
+    "random_null_control": {
+      "cells": 54,
+      "passed": 54,
+      "fraction": 1.0,
+      "required": 0.9,
+      "ok": true,
+      "failing_cells": []
+    }
+  },
+  "cells": [
+    {
+      "searcher": "spill",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 10,
+      "hot": 0.9666666666666667,
+      "null": 0.125,
+      "gap": 0.8416666666666667
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 20,
+      "hot": 0.5,
+      "null": 0.12083333333333333,
+      "gap": 0.37916666666666665
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 40,
+      "hot": 0.25,
+      "null": 0.12083333333333333,
+      "gap": 0.12916666666666665
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 10,
+      "hot": 0.9583333333333334,
+      "null": 0.09166666666666667,
+      "gap": 0.8666666666666667
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 20,
+      "hot": 0.5,
+      "null": 0.10416666666666667,
+      "gap": 0.3958333333333333
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 40,
+      "hot": 0.25,
+      "null": 0.1125,
+      "gap": 0.1375
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 10,
+      "hot": 1.0,
+      "null": 0.125,
+      "gap": 0.875
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 20,
+      "hot": 0.5,
+      "null": 0.11666666666666665,
+      "gap": 0.38333333333333336
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 40,
+      "hot": 0.25,
+      "null": 0.10833333333333334,
+      "gap": 0.14166666666666666
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 10,
+      "hot": 1.0,
+      "null": 0.11666666666666668,
+      "gap": 0.8833333333333333
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 20,
+      "hot": 0.5,
+      "null": 0.15,
+      "gap": 0.35
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 40,
+      "hot": 0.25,
+      "null": 0.09166666666666667,
+      "gap": 0.15833333333333333
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 10,
+      "hot": 0.9916666666666667,
+      "null": 0.10000000000000002,
+      "gap": 0.8916666666666667
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 20,
+      "hot": 0.5,
+      "null": 0.10833333333333334,
+      "gap": 0.39166666666666666
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 40,
+      "hot": 0.25,
+      "null": 0.12083333333333333,
+      "gap": 0.12916666666666665
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 10,
+      "hot": 1.0,
+      "null": 0.11666666666666668,
+      "gap": 0.8833333333333333
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 20,
+      "hot": 0.5,
+      "null": 0.10833333333333334,
+      "gap": 0.39166666666666666
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 40,
+      "hot": 0.25,
+      "null": 0.11875000000000001,
+      "gap": 0.13124999999999998
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 10,
+      "hot": 0.7333333333333334,
+      "null": 0.21666666666666667,
+      "gap": 0.5166666666666667
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 20,
+      "hot": 0.8708333333333332,
+      "null": 0.17500000000000002,
+      "gap": 0.6958333333333332
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 40,
+      "hot": 0.5,
+      "null": 0.20625000000000002,
+      "gap": 0.29374999999999996
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 10,
+      "hot": 0.9333333333333332,
+      "null": 0.24166666666666667,
+      "gap": 0.6916666666666665
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 20,
+      "hot": 0.9625,
+      "null": 0.17500000000000002,
+      "gap": 0.7875
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 40,
+      "hot": 0.5,
+      "null": 0.19375,
+      "gap": 0.30625
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 10,
+      "hot": 0.9916666666666667,
+      "null": 0.19166666666666665,
+      "gap": 0.8
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 20,
+      "hot": 0.9874999999999999,
+      "null": 0.1875,
+      "gap": 0.7999999999999999
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 40,
+      "hot": 0.5,
+      "null": 0.20625000000000002,
+      "gap": 0.29374999999999996
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 10,
+      "hot": 0.9416666666666668,
+      "null": 0.25,
+      "gap": 0.6916666666666668
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 20,
+      "hot": 0.9708333333333333,
+      "null": 0.15416666666666667,
+      "gap": 0.8166666666666667
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 40,
+      "hot": 0.5,
+      "null": 0.22291666666666665,
+      "gap": 0.27708333333333335
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 10,
+      "hot": 0.975,
+      "null": 0.24166666666666667,
+      "gap": 0.7333333333333333
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 20,
+      "hot": 1.0,
+      "null": 0.22916666666666666,
+      "gap": 0.7708333333333334
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 40,
+      "hot": 0.5,
+      "null": 0.19791666666666666,
+      "gap": 0.30208333333333337
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 10,
+      "hot": 1.0,
+      "null": 0.19999999999999998,
+      "gap": 0.8
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 20,
+      "hot": 1.0,
+      "null": 0.17500000000000002,
+      "gap": 0.825
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 40,
+      "hot": 0.5,
+      "null": 0.17916666666666667,
+      "gap": 0.3208333333333333
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 10,
+      "hot": 0.5166666666666667,
+      "null": 0.19999999999999998,
+      "gap": 0.31666666666666676
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 20,
+      "hot": 0.7875,
+      "null": 0.2833333333333333,
+      "gap": 0.5041666666666667
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 40,
+      "hot": 0.75,
+      "null": 0.2708333333333333,
+      "gap": 0.4791666666666667
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 10,
+      "hot": 0.875,
+      "null": 0.25833333333333336,
+      "gap": 0.6166666666666667
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 20,
+      "hot": 0.8958333333333334,
+      "null": 0.25,
+      "gap": 0.6458333333333334
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 40,
+      "hot": 0.75,
+      "null": 0.25,
+      "gap": 0.5
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 10,
+      "hot": 0.9666666666666667,
+      "null": 0.325,
+      "gap": 0.6416666666666666
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 20,
+      "hot": 0.9874999999999999,
+      "null": 0.2833333333333333,
+      "gap": 0.7041666666666666
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 40,
+      "hot": 0.75,
+      "null": 0.25,
+      "gap": 0.5
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 10,
+      "hot": 0.875,
+      "null": 0.3,
+      "gap": 0.575
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 20,
+      "hot": 0.8916666666666666,
+      "null": 0.25416666666666665,
+      "gap": 0.6375
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 40,
+      "hot": 0.75,
+      "null": 0.2625,
+      "gap": 0.4875
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 10,
+      "hot": 0.9166666666666666,
+      "null": 0.20833333333333334,
+      "gap": 0.7083333333333333
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 20,
+      "hot": 0.9666666666666667,
+      "null": 0.25416666666666665,
+      "gap": 0.7125
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 40,
+      "hot": 0.75,
+      "null": 0.2708333333333333,
+      "gap": 0.4791666666666667
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 10,
+      "hot": 0.975,
+      "null": 0.3,
+      "gap": 0.675
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 20,
+      "hot": 1.0,
+      "null": 0.2333333333333333,
+      "gap": 0.7666666666666667
+    },
+    {
+      "searcher": "spill",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 40,
+      "hot": 0.75,
+      "null": 0.26875,
+      "gap": 0.48125
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 10,
+      "hot": 0.0,
+      "null": 0.10833333333333334,
+      "gap": -0.10833333333333334
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 20,
+      "hot": 0.0,
+      "null": 0.10833333333333334,
+      "gap": -0.10833333333333334
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 40,
+      "hot": 0.125,
+      "null": 0.11041666666666666,
+      "gap": 0.014583333333333337
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 10,
+      "hot": 0.0,
+      "null": 0.15,
+      "gap": -0.15
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 20,
+      "hot": 0.0,
+      "null": 0.10833333333333334,
+      "gap": -0.10833333333333334
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 40,
+      "hot": 0.0,
+      "null": 0.1125,
+      "gap": -0.1125
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 10,
+      "hot": 0.0,
+      "null": 0.10833333333333334,
+      "gap": -0.10833333333333334
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 20,
+      "hot": 0.0,
+      "null": 0.08750000000000001,
+      "gap": -0.08750000000000001
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 40,
+      "hot": 0.0,
+      "null": 0.09375,
+      "gap": -0.09375
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 10,
+      "hot": 0.18333333333333335,
+      "null": 0.10833333333333334,
+      "gap": 0.07500000000000001
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 20,
+      "hot": 0.4791666666666667,
+      "null": 0.10833333333333334,
+      "gap": 0.37083333333333335
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 40,
+      "hot": 0.25,
+      "null": 0.09375,
+      "gap": 0.15625
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 10,
+      "hot": 0.0,
+      "null": 0.10833333333333334,
+      "gap": -0.10833333333333334
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 20,
+      "hot": 0.029166666666666664,
+      "null": 0.10833333333333334,
+      "gap": -0.07916666666666668
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 40,
+      "hot": 0.24375,
+      "null": 0.11875000000000001,
+      "gap": 0.12499999999999999
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 10,
+      "hot": 0.0,
+      "null": 0.17500000000000002,
+      "gap": -0.17500000000000002
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 20,
+      "hot": 0.0,
+      "null": 0.10833333333333334,
+      "gap": -0.10833333333333334
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 40,
+      "hot": 0.0,
+      "null": 0.10625,
+      "gap": -0.10625
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 10,
+      "hot": 0.0,
+      "null": 0.20833333333333334,
+      "gap": -0.20833333333333334
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 20,
+      "hot": 0.0,
+      "null": 0.15,
+      "gap": -0.15
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 40,
+      "hot": 0.02291666666666667,
+      "null": 0.2041666666666667,
+      "gap": -0.18125000000000002
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 10,
+      "hot": 0.0,
+      "null": 0.11666666666666665,
+      "gap": -0.11666666666666665
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 20,
+      "hot": 0.0,
+      "null": 0.1875,
+      "gap": -0.1875
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 40,
+      "hot": 0.0,
+      "null": 0.225,
+      "gap": -0.225
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 10,
+      "hot": 0.0,
+      "null": 0.225,
+      "gap": -0.225
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 20,
+      "hot": 0.0,
+      "null": 0.16666666666666666,
+      "gap": -0.16666666666666666
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 40,
+      "hot": 0.0,
+      "null": 0.21041666666666667,
+      "gap": -0.21041666666666667
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 10,
+      "hot": 0.0,
+      "null": 0.19999999999999998,
+      "gap": -0.19999999999999998
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 20,
+      "hot": 0.16666666666666666,
+      "null": 0.19583333333333333,
+      "gap": -0.029166666666666674
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 40,
+      "hot": 0.49374999999999997,
+      "null": 0.22916666666666666,
+      "gap": 0.2645833333333333
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 10,
+      "hot": 0.0,
+      "null": 0.2333333333333333,
+      "gap": -0.2333333333333333
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 20,
+      "hot": 0.0,
+      "null": 0.2041666666666667,
+      "gap": -0.2041666666666667
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 40,
+      "hot": 0.01875,
+      "null": 0.21041666666666667,
+      "gap": -0.19166666666666668
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 10,
+      "hot": 0.0,
+      "null": 0.19166666666666668,
+      "gap": -0.19166666666666668
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 20,
+      "hot": 0.0,
+      "null": 0.19166666666666665,
+      "gap": -0.19166666666666665
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 40,
+      "hot": 0.0,
+      "null": 0.19375,
+      "gap": -0.19375
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 10,
+      "hot": 0.0,
+      "null": 0.24166666666666667,
+      "gap": -0.24166666666666667
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 20,
+      "hot": 0.0,
+      "null": 0.2541666666666667,
+      "gap": -0.2541666666666667
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 40,
+      "hot": 0.004166666666666667,
+      "null": 0.2520833333333333,
+      "gap": -0.24791666666666665
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 10,
+      "hot": 0.0,
+      "null": 0.24166666666666667,
+      "gap": -0.24166666666666667
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 20,
+      "hot": 0.0,
+      "null": 0.23750000000000002,
+      "gap": -0.23750000000000002
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 40,
+      "hot": 0.0,
+      "null": 0.2916666666666667,
+      "gap": -0.2916666666666667
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 10,
+      "hot": 0.0,
+      "null": 0.19166666666666668,
+      "gap": -0.19166666666666668
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 20,
+      "hot": 0.0,
+      "null": 0.25,
+      "gap": -0.25
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 40,
+      "hot": 0.0,
+      "null": 0.2604166666666667,
+      "gap": -0.2604166666666667
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 10,
+      "hot": 0.0,
+      "null": 0.26666666666666666,
+      "gap": -0.26666666666666666
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 20,
+      "hot": 0.0,
+      "null": 0.26666666666666666,
+      "gap": -0.26666666666666666
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 40,
+      "hot": 0.23750000000000002,
+      "null": 0.26875,
+      "gap": -0.031249999999999972
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 10,
+      "hot": 0.0,
+      "null": 0.3416666666666666,
+      "gap": -0.3416666666666666
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 20,
+      "hot": 0.0,
+      "null": 0.26666666666666666,
+      "gap": -0.26666666666666666
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 40,
+      "hot": 0.0,
+      "null": 0.27708333333333335,
+      "gap": -0.27708333333333335
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 10,
+      "hot": 0.0,
+      "null": 0.25833333333333336,
+      "gap": -0.25833333333333336
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 20,
+      "hot": 0.0,
+      "null": 0.25833333333333336,
+      "gap": -0.25833333333333336
+    },
+    {
+      "searcher": "degree",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 40,
+      "hot": 0.0,
+      "null": 0.26875,
+      "gap": -0.26875
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 10,
+      "hot": 0.08333333333333333,
+      "null": 0.10833333333333334,
+      "gap": -0.02500000000000001
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 20,
+      "hot": 0.1125,
+      "null": 0.125,
+      "gap": -0.012499999999999997
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 40,
+      "hot": 0.10208333333333335,
+      "null": 0.12083333333333333,
+      "gap": -0.01874999999999999
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 10,
+      "hot": 0.1416666666666667,
+      "null": 0.125,
+      "gap": 0.01666666666666669
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 20,
+      "hot": 0.09583333333333333,
+      "null": 0.11666666666666665,
+      "gap": -0.02083333333333333
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 40,
+      "hot": 0.125,
+      "null": 0.125,
+      "gap": 0.0
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 10,
+      "hot": 0.10833333333333334,
+      "null": 0.08333333333333333,
+      "gap": 0.02500000000000001
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 20,
+      "hot": 0.14583333333333334,
+      "null": 0.1375,
+      "gap": 0.008333333333333331
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 10,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 40,
+      "hot": 0.09375,
+      "null": 0.11666666666666665,
+      "gap": -0.022916666666666655
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 10,
+      "hot": 0.06666666666666667,
+      "null": 0.09999999999999999,
+      "gap": -0.033333333333333326
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 20,
+      "hot": 0.10416666666666667,
+      "null": 0.12916666666666668,
+      "gap": -0.02500000000000001
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 40,
+      "hot": 0.12708333333333333,
+      "null": 0.13958333333333334,
+      "gap": -0.012500000000000011
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 10,
+      "hot": 0.09166666666666667,
+      "null": 0.09166666666666667,
+      "gap": 0.0
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 20,
+      "hot": 0.125,
+      "null": 0.12083333333333335,
+      "gap": 0.004166666666666652
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 40,
+      "hot": 0.11041666666666666,
+      "null": 0.09583333333333333,
+      "gap": 0.014583333333333337
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 10,
+      "hot": 0.10833333333333334,
+      "null": 0.13333333333333333,
+      "gap": -0.024999999999999994
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 20,
+      "hot": 0.10416666666666667,
+      "null": 0.09166666666666667,
+      "gap": 0.012499999999999997
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 10,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 40,
+      "hot": 0.11458333333333333,
+      "null": 0.1125,
+      "gap": 0.002083333333333326
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 10,
+      "hot": 0.20833333333333334,
+      "null": 0.2833333333333333,
+      "gap": -0.07499999999999998
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 20,
+      "hot": 0.17916666666666667,
+      "null": 0.22916666666666666,
+      "gap": -0.04999999999999999
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 40,
+      "hot": 0.21875,
+      "null": 0.20625000000000002,
+      "gap": 0.012499999999999983
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 10,
+      "hot": 0.17500000000000002,
+      "null": 0.15833333333333333,
+      "gap": 0.01666666666666669
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 20,
+      "hot": 0.20833333333333334,
+      "null": 0.22916666666666666,
+      "gap": -0.020833333333333315
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 40,
+      "hot": 0.19583333333333333,
+      "null": 0.2020833333333333,
+      "gap": -0.006249999999999978
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 10,
+      "hot": 0.25833333333333336,
+      "null": 0.19999999999999998,
+      "gap": 0.058333333333333376
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 20,
+      "hot": 0.17916666666666667,
+      "null": 0.16666666666666666,
+      "gap": 0.012500000000000011
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 20,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 40,
+      "hot": 0.2520833333333333,
+      "null": 0.21458333333333335,
+      "gap": 0.03749999999999998
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 10,
+      "hot": 0.2833333333333333,
+      "null": 0.19166666666666665,
+      "gap": 0.09166666666666667
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 20,
+      "hot": 0.2333333333333333,
+      "null": 0.2041666666666667,
+      "gap": 0.02916666666666662
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 40,
+      "hot": 0.1708333333333333,
+      "null": 0.18958333333333333,
+      "gap": -0.018750000000000017
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 10,
+      "hot": 0.14166666666666666,
+      "null": 0.18333333333333335,
+      "gap": -0.041666666666666685
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 20,
+      "hot": 0.17916666666666667,
+      "null": 0.1875,
+      "gap": -0.008333333333333331
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 40,
+      "hot": 0.1875,
+      "null": 0.16458333333333333,
+      "gap": 0.02291666666666667
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 10,
+      "hot": 0.19999999999999998,
+      "null": 0.17500000000000002,
+      "gap": 0.024999999999999967
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 20,
+      "hot": 0.19583333333333333,
+      "null": 0.1708333333333333,
+      "gap": 0.025000000000000022
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 20,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 40,
+      "hot": 0.21458333333333335,
+      "null": 0.21666666666666667,
+      "gap": -0.002083333333333326
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 10,
+      "hot": 0.3,
+      "null": 0.30833333333333335,
+      "gap": -0.00833333333333336
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 20,
+      "hot": 0.2791666666666667,
+      "null": 0.2916666666666667,
+      "gap": -0.012500000000000011
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.3,
+      "budget": 40,
+      "hot": 0.26666666666666666,
+      "null": 0.26458333333333334,
+      "gap": 0.002083333333333326
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 10,
+      "hot": 0.23333333333333336,
+      "null": 0.2916666666666667,
+      "gap": -0.05833333333333332
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 20,
+      "hot": 0.25833333333333336,
+      "null": 0.24166666666666667,
+      "gap": 0.01666666666666669
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.45,
+      "budget": 40,
+      "hot": 0.29583333333333334,
+      "null": 0.2604166666666667,
+      "gap": 0.03541666666666665
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 10,
+      "hot": 0.25,
+      "null": 0.25,
+      "gap": 0.0
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 20,
+      "hot": 0.25,
+      "null": 0.2791666666666667,
+      "gap": -0.029166666666666674
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 30,
+      "bridges": 2,
+      "p_intra": 0.6,
+      "budget": 40,
+      "hot": 0.2625,
+      "null": 0.29375,
+      "gap": -0.03125
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 10,
+      "hot": 0.24166666666666667,
+      "null": 0.2916666666666667,
+      "gap": -0.05000000000000002
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 20,
+      "hot": 0.28750000000000003,
+      "null": 0.2333333333333333,
+      "gap": 0.054166666666666724
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.3,
+      "budget": 40,
+      "hot": 0.28125,
+      "null": 0.25833333333333336,
+      "gap": 0.02291666666666664
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 10,
+      "hot": 0.2833333333333333,
+      "null": 0.2833333333333333,
+      "gap": 0.0
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 20,
+      "hot": 0.22916666666666666,
+      "null": 0.22916666666666666,
+      "gap": 0.0
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.45,
+      "budget": 40,
+      "hot": 0.28541666666666665,
+      "null": 0.24583333333333335,
+      "gap": 0.039583333333333304
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 10,
+      "hot": 0.24166666666666667,
+      "null": 0.325,
+      "gap": -0.08333333333333334
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 20,
+      "hot": 0.2708333333333333,
+      "null": 0.25,
+      "gap": 0.020833333333333315
+    },
+    {
+      "searcher": "random",
+      "n_penumbra": 30,
+      "bridges": 3,
+      "p_intra": 0.6,
+      "budget": 40,
+      "hot": 0.2520833333333333,
+      "null": 0.2520833333333333,
+      "gap": 0.0
+    }
+  ]
+}

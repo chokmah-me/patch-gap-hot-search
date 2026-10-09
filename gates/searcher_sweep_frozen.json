@@ -1,0 +1,61 @@
+{
+  "schema": "patchgap-searcher-sweep/v1",
+  "frozen_at": "2026-10-09T07:40:00Z",
+  "frozen_note": "Surface and pass criteria written before any sweep result was observed. Anything added after the first run goes in post_freeze, labeled.",
+  "master_seed": 20261009,
+  "n_seeds_per_cell": 12,
+  "axes": {
+    "searcher": [
+      "spill",
+      "degree",
+      "random"
+    ],
+    "n_penumbra": [
+      10,
+      20,
+      30
+    ],
+    "bridges_per_penumbra": [
+      2,
+      3
+    ],
+    "p_intra": [
+      0.3,
+      0.45,
+      0.6
+    ],
+    "budget": [
+      10,
+      20,
+      40
+    ]
+  },
+  "gap_definition": "mean(HOT penumbra share at budget) - mean(null penumbra share at budget), same size and edge count",
+  "criteria": {
+    "spill_positive": {
+      "searcher": "spill",
+      "test": "gap >= 0.20",
+      "min_cell_fraction": 0.9
+    },
+    "degree_negative_control": {
+      "searcher": "degree",
+      "test": "gap < 0.20",
+      "min_cell_fraction": 0.9
+    },
+    "random_null_control": {
+      "searcher": "random",
+      "test": "abs(gap) < 0.15",
+      "min_cell_fraction": 0.9
+    }
+  },
+  "estimand": "Does a label-blind searcher concentrate finds in planted interface penumbra more on HOT graphs than on null graphs? The paper's claim is searcher-dependent; this sweep checks that the dependence is the one the paper states (spill yes, degree no, random no) across generator knobs, and that it is not an artifact of the single default cell.",
+  "post_freeze": [
+    {
+      "at": "2026-10-09T07:45:00Z",
+      "label": "v1 result, recorded not rewritten",
+      "finding": "spill_positive 48/54 (0.89) < 0.90. All 6 failing cells have n_penumbra=10, budget=40: HOT share = 0.25 = n_penumbra/budget, i.e. full recall. The share-gap metric caps below 0.20 whenever budget > n_penumbra/0.2 + null share. Ceiling artifact of the metric, not a searcher failure.",
+      "secondary": "degree negative control fails in 2/54 cells (bridges=3, p_intra=0.30): with sparse modules, 3-module bridges become relatively high-degree, so degree-greedy partly finds them. The searcher dependence is itself generator-dependent.",
+      "action": "v1 kept as-is with its FAIL verdict in results/searcher_sweep_v1_FAILED.json. A v2 spec with a ceiling-normalized metric is frozen separately before its first run."
+    }
+  ]
+}

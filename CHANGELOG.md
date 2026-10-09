@@ -1,5 +1,26 @@
 # Changelog
 
+## v0.2.0 — 2026-10-09 — Gates (unminted)
+
+Added (gates; v0.1 claims unchanged):
+
+- `lean/`: Lean 4 core (no Mathlib) proofs of the paper's Section 4.3 stock algebra.
+  `stock_rises_iff`, `stock_flat_iff`, `stock_grows_on_window`,
+  `stock_nonincreasing_after`, `g_falls_while_stock_rises` (G 10 -> 3 while S rises).
+  lean-proof-forge verdict VERIFIED: no sorry/admit, no native_decide, no local axioms,
+  axioms within {propext, Classical.choice, Quot.sound}. Toolchain v4.15.0.
+- `gates/check_regime_arithmetic.py` + `regime_numbers.json`: recomputes Section 4.4
+  R_d and G from stated inputs; checks phrases verbatim against the paper. Fails on
+  paper v4-PRE (filter of 10^2 gives ~1 gap/hour, not 1/week); passes on v5-PRE (10^4).
+- `gates/check_searcher_sweep.py` + frozen specs: 3 searchers x 54 generator cells.
+  v1 spec FAILED (spill 48/54 < 0.90) on a metric ceiling when budget > planted
+  penumbra; kept as `results/searcher_sweep_v1_FAILED.json`. v2 spec (recall lift,
+  frozen before its first run) passes: spill 54/54, degree control 49/54, random 54/54.
+- `gates/check_sources.py` + `sources.json` + `predictions.json`: figure drift,
+  retired phrasings, staleness (STALE after 120 days; fails with --strict), prediction
+  ledger with deadlines.
+- `run_all_gates.py`: one command for all gates.
+
 ## v0.1.1 — 2026-08-13 — Labeled figures
 
 Replaced unlabeled snapshots with five Tufte-leaning SVGs (axes, ticks, base-rate

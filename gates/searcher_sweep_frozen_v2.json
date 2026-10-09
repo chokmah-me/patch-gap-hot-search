@@ -1,0 +1,54 @@
+{
+  "schema": "patchgap-searcher-sweep/v2",
+  "frozen_at": "2026-10-09T07:46:00Z",
+  "frozen_note": "Frozen after v1 failed on a ceiling artifact and before any v2 run. Same axes, seeds and criteria thresholds; only the metric changes.",
+  "master_seed": 20261010,
+  "n_seeds_per_cell": 12,
+  "axes": {
+    "searcher": [
+      "spill",
+      "degree",
+      "random"
+    ],
+    "n_penumbra": [
+      10,
+      20,
+      30
+    ],
+    "bridges_per_penumbra": [
+      2,
+      3
+    ],
+    "p_intra": [
+      0.3,
+      0.45,
+      0.6
+    ],
+    "budget": [
+      10,
+      20,
+      40
+    ]
+  },
+  "gap_definition": "mean(HOT hits / min(budget, n_penumbra)) - mean(null hits / min(budget, n_penumbra)): fraction of the reachable penumbra recovered, so full recall scores 1 at any budget",
+  "criteria": {
+    "spill_positive": {
+      "searcher": "spill",
+      "test": "gap >= 0.20",
+      "min_cell_fraction": 0.9
+    },
+    "degree_negative_control": {
+      "searcher": "degree",
+      "test": "gap < 0.20",
+      "min_cell_fraction": 0.9
+    },
+    "random_null_control": {
+      "searcher": "random",
+      "test": "abs(gap) < 0.15",
+      "min_cell_fraction": 0.9
+    }
+  },
+  "estimand": "Does a label-blind searcher concentrate finds in planted interface penumbra more on HOT graphs than on null graphs? The paper's claim is searcher-dependent; this sweep checks that the dependence is the one the paper states (spill yes, degree no, random no) across generator knobs, and that it is not an artifact of the single default cell.",
+  "post_freeze": [],
+  "metric": "recall_lift"
+}

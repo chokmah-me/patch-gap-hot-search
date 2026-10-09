@@ -51,6 +51,25 @@ Outer gate (same command via manifest):
 python path\to\computational-claim-gate\scripts\verify_claim_project.py --project .
 ```
 
+
+## v0.2 gates
+
+```text
+python run_all_gates.py --paper paper/PAPER_PATCHGAP_DRAFT_v5-PRE.md
+python run_all_gates.py --paper paper/PAPER_PATCHGAP_DRAFT_v5-PRE.md --lean \
+    --lean-verifier path/to/lean-proof-forge/scripts/verify_lean_project.py
+```
+
+| Gate | What it pins | Status on v5-PRE |
+|------|--------------|------------------|
+| toy claims (v0.1) | HOT concentration, stock identity, limiter | pass |
+| `gates/check_searcher_sweep.py` | frozen 162-cell sweep; spill yes, degree no, random no | pass (v1 spec kept with its FAIL) |
+| `gates/check_regime_arithmetic.py` | Section 4.4 numbers recompute | pass (fails on v4-PRE) |
+| `gates/check_sources.py` | 14 figures, 4 retired phrasings, 3 predictions | pass |
+| `lean/` | Section 4.3 stock algebra, kernel-checked | VERIFIED |
+
+The Lean gate needs elan with toolchain `leanprover/lean4:v4.15.0`. No Mathlib.
+
 ## Layout
 
 | Path | Role |

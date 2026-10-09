@@ -4,8 +4,53 @@
     {
       "id": "patchgap-hot-searcher",
       "description": "Thin MC: HOT interface searcher concentrates finds in planted penumbra vs uniform-null; S_known nondecreasing while Rd>Rp; legislative acceleration can drop G while S_known still rises. Not a measurement of legal G.",
-      "command": ["python", "verify_patchgap_claims.py"],
+      "command": [
+        "python",
+        "verify_patchgap_claims.py"
+      ],
       "timeout_sec": 120
+    },
+    {
+      "id": "patchgap-searcher-sweep",
+      "description": "Frozen sweep (v2 spec): spill searcher beats null by >=0.20 recall lift in >=90% of cells; degree-greedy below margin in >=90%; random within +/-0.15 in >=90%. v1 spec failed on a metric ceiling and is kept with its FAIL result.",
+      "command": [
+        "python",
+        "gates/check_searcher_sweep.py"
+      ],
+      "timeout_sec": 120
+    },
+    {
+      "id": "patchgap-regime-arithmetic",
+      "description": "Section 4.4 regime numbers recompute within half an order of magnitude and appear verbatim in the paper.",
+      "command": [
+        "python",
+        "gates/check_regime_arithmetic.py",
+        "--paper",
+        "paper/PAPER_PATCHGAP_DRAFT_v5-PRE.md"
+      ],
+      "timeout_sec": 30
+    },
+    {
+      "id": "patchgap-sources",
+      "description": "Registered empirical figures and prediction statuses appear verbatim in the paper; no retired phrasing; staleness reported.",
+      "command": [
+        "python",
+        "gates/check_sources.py",
+        "--paper",
+        "paper/PAPER_PATCHGAP_DRAFT_v5-PRE.md"
+      ],
+      "timeout_sec": 30
+    },
+    {
+      "id": "patchgap-lean-stock",
+      "description": "Lean 4 (core, no Mathlib): stock rises iff Rd>Rp; window growth; non-increase once Rd<=Rp; witness with G falling 10->3 while S rises. No sorry, no native_decide, axioms within standard set.",
+      "command": [
+        "python",
+        "<lean-proof-forge>/scripts/verify_lean_project.py",
+        "--project",
+        "lean"
+      ],
+      "timeout_sec": 600
     }
   ]
 }

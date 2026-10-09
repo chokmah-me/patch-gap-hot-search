@@ -37,3 +37,22 @@ Outer runner: `computational-claim-gate` `verify_claim_project.py --project .` â
 The HOT concentration result is a property of this generator + spill ranking pair. A different searcher (degree-greedy) picks robust hubs and **fails** claim 1 â€” that failure was observed in the first gate run and is why ranking is spill, not degree. Sticky legislative acceleration is a modeling choice (ECRA-style, not a one-step flicker). Parameters are scenario knobs.
 
 No mint, push, or announce from this gate.
+
+
+## v0.2 addendum (2026-10-09, Linux, Python 3.14, Lean 4.15.0 core)
+
+| gate | result | evidence |
+|------|--------|----------|
+| searcher sweep v1 | FAIL 48/54 spill cells (ceiling artifact) | `results/searcher_sweep_v1_FAILED.json` |
+| searcher sweep v2 | pass: spill 54/54, degree 49/54, random 54/54 | `results/searcher_sweep_v2.json` |
+| regime arithmetic | pass on v5-PRE; fails on v4-PRE | stdout |
+| sources/predictions | pass on v5-PRE | stdout |
+| Lean stock algebra | VERIFIED, 5 declarations | `lean/results/lean_verify_meta.json` |
+
+Lean was run against a locally linked toolchain (`lean-4.15.0`, same release as
+`leanprover/lean4:v4.15.0`) because the session's egress policy blocked
+release.lean-lang.org; the committed `lean-toolchain` names the official release.
+
+Residual risk added in v0.2: degree-greedy finds planted bridges when bridges touch
+three modules in sparse modules (5/54 cells), so the paper's searcher dependence is
+itself generator-dependent. The paper (v5-PRE Section 4.5) now says so.
