@@ -22,6 +22,7 @@
 - **This software (GitHub):** https://github.com/chokmah-me/patch-gap-hot-search
 - **Release:** https://github.com/chokmah-me/patch-gap-hot-search/releases/tag/v0.2.0
 - **Record:** https://zenodo.org/records/23262639
+- **OSF (legacy mirror):** https://osf.io/5pjcv/ (DOI [10.17605/OSF.IO/5PJCV](https://doi.org/10.17605/OSF.IO/5PJCV)) — Zenodo is canonical.
 - Paper GitHub: https://github.com/chokmah-me/patch-gap
 - Paper record: https://zenodo.org/records/23262565
 
