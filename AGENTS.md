@@ -1,26 +1,26 @@
 # AGENTS.md — patch-gap-hot-search
 
-## What this is
-A stdlib Python toy that generates a discovery rate Rd on a Highly Optimized Tolerance rule graph. G and S are outputs of the toy, not measurements of any legal system.
+Software companion that generates \(R_d\) from a budgeted HOT-graph searcher. Do not simulate \(G\). \(G\) and the stocks are outputs. Python 3.10+, stdlib only.
 
-## Layout (top level)
-- `CHANGELOG.md`
-- `CITATION.cff`
-- `LICENSE`
-- `README.md`
-- `ZENODO.md`
-- `claim-manifest.json`
-- `docs`
-- `figures`
-- `gates`
-- `lean`
+## Commands
+
+```powershell
+python verify_patchgap_claims.py
+python -m simulation.figures
+python run_all_gates.py --paper paper/PAPER_PATCHGAP_DRAFT_v6.md
+```
+
+`verify_patchgap_claims.py` exit 0 iff the three gated claims hold. Figures are labeled SVGs, not load-bearing.
 
 ## Work rules
-- Work from the README first; it is the canonical description of purpose, layout, and any build or verify commands.
-- Do not change verdicts, locked data tables, or published artifacts without the user's explicit word.
-- Keep changes small and receipt-backed: name the commit or artifact a claim rests on.
 
-## Canonical docs
-- `README.md` — purpose, usage, and status.
-- `CITATION.cff` — how to cite the associated paper/record.
-- `LICENSE` — terms of use.
+- Not a measurement of legal \(G\), \(R_d\), or \(R_p\).
+- Paper §4.4 powers of ten stay heuristics.
+- Claim 1 failure challenges this generator+searcher pair, not a legislature.
+
+## Pointers
+
+- `README.md` — gated claims and non-claims
+- `claim-manifest.json` — computational-claim-gate
+- `docs/SOFTWARE-ABSTRACT.md` — Zenodo body
+- `ZENODO.md` — software concept vs version
